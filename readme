@@ -1,0 +1,96 @@
+# Java Problem Solving — 3 Medium-Level Challenges
+
+This repository includes Java solutions to three common interview-level problems using optimized and brute-force approaches (like Linear Search, Binary Search, Sorting, HashMap, and Dynamic Programming).
+
+---
+
+## 📘 Problem 1: Subarray Sum Equals K
+
+### 📝 Problem Description:
+You are working as a data analyst for a fitness app. Every day, users log the number of calories burned. Your task is to find how many continuous days (subarrays) exist where the total calories burned equals a certain target `k`.
+
+### 💡 Input:
+- An integer `n` — the number of days.
+- An array `nums` of n integers — calories burned each day.
+- An integer `k` — the target calorie burn.
+
+### 🎯 Output:
+- A single integer — the total number of continuous subarrays whose sum equals `k`.
+
+### 🧪 Example:
+| Input            | Output |
+|------------------|--------|
+| nums = [1,2,3], k = 3 | 2      |
+
+Subarrays: `[1,2]` and `[3]` both sum to 3.
+
+---
+
+### 🚀 Approaches:
+
+| Approach                    | Time Complexity | Space Complexity |
+|----------------------------|------------------|------------------|
+| Brute Force (2 Loops)      | O(n²)            | O(1)             |
+| Prefix Sum + HashMap (Efficient ✅) | O(n)              | O(n)             |
+
+---
+
+## 📘 Problem 2: Maximum Erasure Value (Max Sum of Unique Subarray)
+
+### 📝 Problem Description:
+You're given an array of positive integers. You must find the maximum sum of a subarray with **only unique elements**.
+
+### 💡 Input:
+- An integer array `nums` of length n.
+
+### 🎯 Output:
+- A single integer — the maximum possible sum of a subarray with all unique elements.
+
+### 🧪 Example:
+| Input          | Output |
+|----------------|--------|
+| nums = [4,2,4,5,6] | 17     |
+
+Subarray `[2,4,5,6]` has unique elements and sum = 17.
+
+---
+
+### 🚀 Approaches:
+
+| Approach               | Time Complexity | Space Complexity |
+|------------------------|------------------|------------------|
+| Brute Force            | O(n²)            | O(1)             |
+| Sliding Window + HashSet (Efficient ✅) | O(n)              | O(n)             |
+
+---
+
+## 📘 Problem 3: Paint House II
+
+### 📝 Problem Description:
+Given a matrix of costs, where `costs[i][j]` is the cost of painting house `i` with color `j`, return the minimum total cost to paint all houses so that **no two adjacent houses have the same color**.
+
+### 💡 Input:
+- Integer `n` (number of houses), `k` (number of colors)
+- A `costs` matrix of size `n x k`
+
+### 🎯 Output:
+- A single integer — minimum total painting cost.
+
+### 🧪 Example:
+| Input         | Output |
+|---------------|--------|
+| n=2, k=3       | 5      |
+| costs = [[1,5,3], [2,9,4]] | |
+
+Optimal: Paint house 0 with color 0 (1), house 1 with color 2 (4)
+
+---
+
+### 🚀 Approaches:
+
+| Approach                         | Time Complexity | Space Complexity |
+|----------------------------------|------------------|------------------|
+| Brute Force (Check All Paths)    | O(n * k²)        | O(n)             |
+| Dynamic Programming with 2 Min Tracking (Efficient ✅) | O(n * k)         | O(1)             |
+
+
